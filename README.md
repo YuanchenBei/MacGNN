@@ -18,17 +18,17 @@ The experiments are conducted on the Linux system with NVIDIA Tesla M40 (24G) GP
 ## Dataset Access
 Due to the datasets are too large to be directly uploaded (exceeds git's file size upload limitation), we store the preprocessed datasets in Google Cloud Disk, the access links is as follows: https://drive.google.com/drive/folders/1xJ8HpEya7Kyndh2yA2WIdnnTLejbsZWe?usp=sharing
 
-After downloading the **data.zip** file from the link, you should unzip it and place the unzipped datasets into the **./data** folder.
+After the **data.zip** file is downloaded from the link, you should unzip it and place the unzipped datasets (files with .pkl suffix) into the **./data** folder.
 
 ## Experiment Reproduce
-We provide all the running scripts to reproduce our experimental results. Note you should enter the **./model** folder and download and place the datasets into the **./data** folder before running the code.
+We provide all the running scripts to reproduce our experimental results. Note you should place the downloaded datasets into the **./data** folder and enter the **./model** folder before running the code.
 
-Firstly, we provide a overall running script file reproduce.sh in ./model folder, which can run directly in bash.
+Firstly, we provide an overall running script file **reproduce.sh** in ./model folder, which can run directly in bash.
 ```
 bash reproduce.sh
 ```
 
-Furthermore, you can also implement and reproduce the result of each dataset we provided directly as follows.
+Furthermore, you can also implement and reproduce the result of each dataset that we provided directly as follows.
 
 * For **MovieLens**, you can use the following run command:
 ```
