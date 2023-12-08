@@ -23,11 +23,13 @@ tqdm == 4.63.0
 The experiments are conducted on the Linux system with NVIDIA Tesla M40 (24G) GPUs under the CUDA version of 10.2.
 
 ## Dataset Access
-Due to the datasets are too large to be directly uploaded (exceeds git's file size upload limitation), we store the preprocessed datasets in Google Cloud Disk, the access links is as follows: https://drive.google.com/drive/folders/1xJ8HpEya7Kyndh2yA2WIdnnTLejbsZWe?usp=sharing
+We have provided the preprocessed datasets for direct usage. Due to the datasets being too large to be directly uploaded (exceeds git's file size upload limitation), we store the preprocessed datasets in Google Cloud Disk, the access links are as follows: https://drive.google.com/drive/folders/1xJ8HpEya7Kyndh2yA2WIdnnTLejbsZWe?usp=sharing
 
 After the **data.zip** file is downloaded from the link, you should unzip it and place the unzipped datasets (files with .pkl suffix) into the **./data** folder.
 
-Sources of the public datasets:
+Furthermore, we have also provided the data processing code in the **./data/MAG** folder. Thus, you can also download the raw data that we used or any of your other recommendation datasets and process it by yourself. 
+
+Here are the sources of the public datasets that we used in the paper:
 * MovieLens dataset: https://grouplens.org/datasets/movielens/10m
 * Electronics dataset: https://jmcauley.ucsd.edu/data/amazon
 * Kuaishou dataset: https://kuairec.com
