@@ -8,6 +8,11 @@ MacGNN has already served one of the biggest shopping platforms for two months, 
 
 ![The illustration of MAG and MacGNN](./MacGNN-fig.png "The illustration of MAG and MacGNN")
 
+To better describe the generation of the macro graph, here we also provide a <u>dynamic figure</u> of the transformation from micro graph to macro graph:
+
+![The dynamic process of macro graph generation](./dynamic-fig.gif "The dynamic process of macro graph generation")
+
+
 ## Requirements
 ```
 python >= 3.8
