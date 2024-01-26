@@ -1,16 +1,11 @@
 # MacGNN
-This is the source code repository of MacGNN (Online Billion-Scale Recommender Systems with Macro Graph Neural Networks), submitted to The Web Conference 2024.
+This is the source code demo repository of MacGNN (Macro Graph Neural Networks for Online Billion-Scale Recommender Systems), The Web Conference 2024.
 
 ## Introduction
 Predicting Click-Through Rate (CTR) in **billion-scale recommender systems** has long been a challenging task for Graph Neural Networks (GNNs) due to the immense computational complexity involved in aggregating billions of neighbors. In order to address this issue, GNN-based CTR models typically resort to sampling a few hundred neighbors out of the billions to enable efficient online recommendations. However, this approach introduces a severe sampling bias, resulting in the failure to capture the full range of user or item behavioral patterns. 
 To overcome this challenge, we propose a new approach by introducing the concept of a "micro recommendation graph" for conventional user-item recommendation graphs, and we present a more suitable alternative called the **<u>MA</u>cro Recommendation <u>G</u>raph (MAG)** for billion-scale recommendations. The MAG approach resolves the computational complexity problems in the underlying infrastructure by reducing the node count from billions to hundreds. Specifically, MAG groups micro nodes (users and items) with similar behavior patterns together to form macro nodes. Subsequently, we introduce tailored **Macro Graph Neural Networks (MacGNN)** to aggregate information on a macro level and refine the embeddings of macro neighbors. 
-MacGNN has already served one of the biggest shopping platforms for two months, providing recommendations for over one billion users. Both offline experiments and online A/B tests have varified the effectiveness of MacGNN.
 
 ![The illustration of MAG and MacGNN](./MacGNN-fig.png "The illustration of MAG and MacGNN")
-
-To better describe the generation of the macro graph, here we also provide a <u>dynamic figure</u> of the transformation from micro graph to macro graph:
-
-![The dynamic process of macro graph generation](./dynamic-fig.gif "The dynamic process of macro graph generation")
 
 
 ## Requirements
@@ -25,7 +20,7 @@ tqdm == 4.63.0
 ```
 
 ## Environment
-The experiments are conducted on the Linux system with NVIDIA Tesla M40 (24G) GPUs under the CUDA version of 10.2.
+The offline experiments are conducted on the Linux system with NVIDIA Tesla M40 (24G) GPUs under the CUDA version of 10.2.
 
 ## Dataset Access
 We have provided the preprocessed datasets for direct usage. Due to the datasets being too large to be directly uploaded (exceeds git's file size upload limitation), we store the preprocessed datasets in Google Cloud Disk, the access links are as follows: https://drive.google.com/drive/folders/1xJ8HpEya7Kyndh2yA2WIdnnTLejbsZWe?usp=sharing
