@@ -1,5 +1,5 @@
 # MacGNN
-This is the source code demo repository of MacGNN (Macro Graph Neural Networks for Online Billion-Scale Recommender Systems), The Web Conference 2024.
+This is the source code demo repository of MacGNN ([Macro Graph Neural Networks for Online Billion-Scale Recommender Systems](https://arxiv.org/pdf/2401.14939.pdf)), The Web Conference 2024.
 
 ## Introduction
 Predicting Click-Through Rate (CTR) in **billion-scale recommender systems** has long been a challenging task for Graph Neural Networks (GNNs) due to the immense computational complexity involved in aggregating billions of neighbors. In order to address this issue, GNN-based CTR models typically resort to sampling a few hundred neighbors out of the billions to enable efficient online recommendations. However, this approach introduces a severe sampling bias, resulting in the failure to capture the full range of user or item behavioral patterns. 
