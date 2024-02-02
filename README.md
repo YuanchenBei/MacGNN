@@ -2,7 +2,7 @@
 This is the source code demo repository of MacGNN ([Macro Graph Neural Networks for Online Billion-Scale Recommender Systems](https://arxiv.org/pdf/2401.14939.pdf)), The Web Conference 2024.
 
 ## Introduction
-Predicting Click-Through Rate (CTR) in **billion-scale recommender systems** has long been a challenging task for Graph Neural Networks (GNNs) due to the immense computational complexity involved in aggregating billions of neighbors. In order to address this issue, GNN-based CTR models typically resort to sampling a few hundred neighbors out of the billions to enable efficient online recommendations. However, this approach introduces a severe sampling bias, resulting in the failure to capture the full range of user or item behavioral patterns. 
+Predicting Click-Through Rate (CTR) in billion-scale recommender systems has long been a challenging task for Graph Neural Networks (GNNs) due to the immense computational complexity involved in aggregating billions of neighbors. In order to address this issue, GNN-based CTR models typically resort to sampling a few hundred neighbors out of the billions to enable efficient online recommendations. However, this approach introduces a severe sampling bias, resulting in the failure to capture the full range of user or item behavioral patterns. 
 To overcome this challenge, we propose a new approach by introducing the concept of a "micro recommendation graph" for conventional user-item recommendation graphs, and we present a more suitable alternative called the **<u>MA</u>cro Recommendation <u>G</u>raph (MAG)** for billion-scale recommendations. The MAG approach resolves the computational complexity problems in the underlying infrastructure by reducing the node count from billions to hundreds. Specifically, MAG groups micro nodes (users and items) with similar behavior patterns together to form macro nodes. Subsequently, we introduce tailored **Macro Graph Neural Networks (MacGNN)** to aggregate information on a macro level and refine the embeddings of macro neighbors. 
 
 ![The illustration of MAG and MacGNN](./MacGNN-fig.png "The illustration of MAG and MacGNN")
@@ -57,4 +57,14 @@ python main.py --model_name macgnn --dataset_name elec --learning_rate 0.01 --we
 * For **Kuaishou**, you can use the following run command:
 ```
 python main.py --model_name macgnn --dataset_name kuairec --learning_rate 0.005 --weight_decay 1e-5 --runs 5 --tau 0.7
+```
+
+## Citation
+```
+@article{chen2024macro,
+  title={Macro Graph Neural Networks for Online Billion-Scale Recommender Systems},
+  author={Chen, Hao and Bei, Yuanchen and Shen, Qijie and Xu, Yue and Zhou, Sheng and Huang, Wenbing and Huang, Feiran and Wang, Senzhang and Huang, Xiao},
+  journal={arXiv preprint arXiv:2401.14939},
+  year={2024}
+}
 ```
