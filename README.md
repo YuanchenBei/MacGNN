@@ -62,9 +62,10 @@ python main.py --model_name macgnn --dataset_name kuairec --learning_rate 0.005 
 ## Citation
 ```
 @inproceedings{chen2024macro,
-  title={Macro Graph Neural Networks for Online Billion-Scale Recommender Systems},
+  title={Macro graph neural networks for online billion-scale recommender systems},
   author={Chen, Hao and Bei, Yuanchen and Shen, Qijie and Xu, Yue and Zhou, Sheng and Huang, Wenbing and Huang, Feiran and Wang, Senzhang and Huang, Xiao},
-  booktitle={Proceedings of the ACM Web Conference},
+  booktitle={Proceedings of the ACM on Web Conference 2024},
+  pages={3598--3608},
   year={2024}
 }
 ```
